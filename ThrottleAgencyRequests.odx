@@ -1,0 +1,1283 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="ee51f666-a531-4ec7-a582-1015a58e2364" LowerBound="1.1" HigherBound="312.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="THSample.DFM.Orchestrations" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="1771755a-ec1c-40da-932a-8df8ee7ab7d8" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="311.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ThrottleAgencyRequests" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="d2291dc8-a92d-46b9-bed0-7c6883fb3a36" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="20.1" HigherBound="21.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ThrottlingSettingsExpiry_Minutes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3c8012d7-a77f-4528-b64b-2bb9fb17e684" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="21.1" HigherBound="22.1">
+                <om:Property Name="InitialValue" Value="false" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="BreakAggregateLoop" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3bfdb2f8-b6f2-4912-b39c-27d31b4dac5a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MaximumIdleTime_Minutes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="45f6426f-ce81-4656-b1f9-52d89ad556c6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="23.1" HigherBound="24.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Latency_MilliSeconds" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2c06dd06-16dd-4f0d-9f76-6b6cb7e66b16" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strfaultmessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7fe5031b-903e-40cd-a985-bc85e8a0c993" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int64" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="scopeStarted" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="edce075b-5dcb-4292-a23d-3609923e9676" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="scopeName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="84fc1234-8289-4ee7-8978-5fa34a1b8d06" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="debugMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4a9e4227-adbd-4649-a9d7-a47d263689b9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="callToken" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a8785552-cea0-4528-80b3-e9d780af694d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LastThrottlingSettings_Timestamp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a99cd74b-0fef-45ce-9ea5-1b4f63ae634e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.TimeSpan" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LastThrottlingSettings_Duration" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="fcdbff17-c58d-41bd-9e1f-c092049c4b4a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="WaitDuringOFFRange_Minutes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d57d8cec-7a58-434b-b99b-a5b960a1fdeb" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrchestrationName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e58630ed-fa8c-4d91-8113-cf3a7102582c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="InitialValue" Value="1" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MaximumIdleTime_Drain_Seconds" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="79ecc645-e53a-4319-820a-0c7e55b1fa4c" ParentLink="ServiceDeclaration_Transaction" LowerBound="5.21" HigherBound="5.68">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="8610b0a0-4b9e-4d1f-829f-35fcb6be00e1" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestCorrelationType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AgencyRequestCorrelation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="2cf013c2-4a86-4bf6-a6d4-6f47d728989d" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="37.173" HigherBound="37.208">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="bfe89cf3-8bb9-48cf-b871-1fa87d056305" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="b66f0b0c-cb6f-4382-99bd-86e6f9d5bedd" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="204.110" HigherBound="204.134">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="ed79181a-7930-4a96-bb4e-e41b8bedb387" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="e89c1407-09c3-42df-84d9-5bc198c0f068" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="267.114" HigherBound="267.138">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="18695ad0-b175-4868-9826-35b1ecaa3c83" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_4" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c2da10e4-1680-45e5-b551-1babd9de482e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="15.1" HigherBound="16.1">
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MSG_AgencyResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="102996fa-2d79-4c3d-b4b1-b85fed48652f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="16.1" HigherBound="17.1">
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.GlobalConfigsType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MSG_GlobalConfigs" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="dcf5f204-139f-4f99-922e-f782c0ab6989" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="17.1" HigherBound="18.1">
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MSG_ThrottledRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f7a30a73-9388-49db-b252-d003faf6539d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MSG_AgencyRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d24d26ec-3e76-45b6-bf38-145eb1476661" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="19.1" HigherBound="20.1">
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.ThrottleSettingsType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MSG_ThrottleSettings" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="89bd51cb-43bb-4845-a48e-bbfda255ccbc" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="bfe89cf3-8bb9-48cf-b871-1fa87d056305" ParentLink="ServiceBody_Statement" LowerBound="36.1" HigherBound="44.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="GetAgencyRequestsPort" />
+                    <om:Property Name="MessageName" Value="MSG_AgencyRequest" />
+                    <om:Property Name="OperationName" Value="FetchAgencyData" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Rcv_Request" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DNFPredicate" OID="0f297322-46ed-4fff-b59d-0312f230f0b7" ParentLink="Receive_DNFPredicate">
+                        <om:Property Name="LHS" Value="BTS.Operation" />
+                        <om:Property Name="RHS" Value="&quot;FetchAgencyData&quot;" />
+                        <om:Property Name="Grouping" Value="AND" />
+                        <om:Property Name="Operator" Value="Equals" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="DNFPredicate" OID="1c70b890-12a2-43ae-878c-80aa380ec6b8" ParentLink="Receive_DNFPredicate">
+                        <om:Property Name="LHS" Value="THSample.DFM.InternalSchemas.Throttle" />
+                        <om:Property Name="RHS" Value="&quot;1&quot;" />
+                        <om:Property Name="Grouping" Value="AND" />
+                        <om:Property Name="Operator" Value="Equals" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="8ee6c512-2d06-41db-a543-90967e066d2a" ParentLink="ServiceBody_Statement" LowerBound="44.1" HigherBound="46.1">
+                    <om:Property Name="Expression" Value="callToken = Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceIn();" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="TraceEntry" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="adf30b38-f460-4937-8874-a61b960fe9c1" ParentLink="ServiceBody_Statement" LowerBound="46.1" HigherBound="48.1">
+                    <om:Property Name="Expression" Value="OrchestrationName = &quot;ThrottlingOrchestration_Agency (&quot; +MSG_AgencyRequest(THSample.DFM.InternalSchemas.AID)+&quot;)&quot;;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SetORCName" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="7f6c7da7-7b9b-4624-b04a-1f955b1e7447" ParentLink="ServiceBody_Statement" LowerBound="48.1" HigherBound="307.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Main" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="ff20ab06-b1b7-4e93-872d-6dfd8f6b3f3f" ParentLink="Scope_Transaction" LowerBound="49.18" HigherBound="49.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="3f5955ac-c9ca-480a-ad7c-b6793c5272e0" ParentLink="ComplexStatement_Statement" LowerBound="53.1" HigherBound="59.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_DummyThrottleConfigs" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="6b897ee8-e27c-4201-a106-4a53e9dcb554" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="58.1">
+                            <om:Property Name="ClassName" Value="THSample.DFM.Orchestrations.XForm_Dummy_To_GlobalConfigs" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="XForm_ThrottleConfigs" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="d1a62d58-9e1a-42f3-ab20-7ad08acd6339" ParentLink="Transform_InputMessagePartRef" LowerBound="57.116" HigherBound="57.138">
+                                <om:Property Name="MessageRef" Value="MSG_AgencyRequest" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="0b4b7021-d03e-4b3f-9773-8eb1e3e5ab30" ParentLink="Transform_OutputMessagePartRef" LowerBound="57.36" HigherBound="57.58">
+                                <om:Property Name="MessageRef" Value="MSG_GlobalConfigs" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="b00c0543-d3b7-4231-9f08-335bf29a85c1" ParentLink="Construct_MessageRef" LowerBound="54.31" HigherBound="54.48">
+                            <om:Property Name="Ref" Value="MSG_GlobalConfigs" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Call" OID="ffe15fdc-cba7-4fca-bb68-50f47cd83e0a" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="61.1">
+                        <om:Property Name="Identifier" Value="CallThrottleRules" />
+                        <om:Property Name="Invokee" Value="THSample.DFM.Orchestrations.ThrottlingRules" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CallThrottleRules" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Parameter" OID="1cf06779-5f7d-49f8-aae2-1ef754585b9f" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="Out" />
+                            <om:Property Name="Name" Value="MSG_ThrottleSettings" />
+                            <om:Property Name="Type" Value="THSample.DFM.Orchestrations.ThrottleSettingsType" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="3df068ce-7992-4e6c-b04c-0d674c1d5b0e" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="MSG_AgencyRequest" />
+                            <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestType" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="0b1304f8-c22d-4117-92c9-bdf6a305b00d" ParentLink="ComplexStatement_Statement" LowerBound="61.1" HigherBound="63.1">
+                        <om:Property Name="Expression" Value="Latency_MilliSeconds =  System.Convert.ToInt32(MSG_ThrottleSettings.Body.Latency_Milliseconds);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Set Latency" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="e14ecc6d-93d8-4ba6-abaf-acd297952fb4" ParentLink="ComplexStatement_Statement" LowerBound="63.1" HigherBound="65.1">
+                        <om:Property Name="Expression" Value="LastThrottlingSettings_Timestamp = System.DateTime.Now;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SetNewTimestamp" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="c96bf54f-5268-4619-8e1f-04ddc8c2d37e" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="68.1">
+                        <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;BRE Throttle Latency_MilliSeconds = {0}&quot;, Latency_MilliSeconds);&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;New LastThrottlingSettings_Timestamp = {0}&quot;, LastThrottlingSettings_Timestamp);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Trace Variables" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Scope" OID="fc1a3e00-02ac-40a5-8416-5650d8435c79" ParentLink="ComplexStatement_Statement" LowerBound="68.1" HigherBound="221.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope_ThrottleAgencyRequests" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="LongRunningTransaction" OID="16649415-4371-43a6-8685-05bc2be64934" ParentLink="Scope_Transaction" LowerBound="69.26" HigherBound="69.64">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transaction_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="While" OID="c05644df-8065-427f-9164-eaf3dd8a5513" ParentLink="ComplexStatement_Statement" LowerBound="73.1" HigherBound="219.1">
+                            <om:Property Name="Expression" Value="BreakAggregateLoop == false" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Loop_AggregateRequests" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="828afd01-e430-4fbd-abb4-1f5eaecb8796" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="79.1">
+                                <om:Property Name="Expression" Value="scopeName = &quot;Scope_ThrottleAgencyRequests&quot;;&#xD;&#xA;scopeStarted = Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceStartScope(scopeName, callToken);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TraceScopeStart" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="CallRules" OID="56e015db-7018-4092-999f-615cf99e8fab" ParentLink="ComplexStatement_Statement" LowerBound="79.1" HigherBound="103.1">
+                                <om:Property Name="PolicyName" Value="THSampleDFMConfigs" />
+                                <om:Property Name="PolicyVersion" Value="-1" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Global Configs" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="RulesParameterRef" OID="90bc516d-4c5c-4c22-9591-eb92259b18bc" ParentLink="CallRules_RulesParameterRef">
+                                    <om:Property Name="Reference" Value="MSG_GlobalConfigs" />
+                                    <om:Property Name="PartReference" Value="Body" />
+                                    <om:Property Name="Alias" Value="THSample.DFM.InternalSchemas.GlobalConfigs" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="RulesParameterRef_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="2eb17691-2d31-4c14-9b5f-3d9883a8c4ea" ParentLink="ComplexStatement_Statement" LowerBound="103.1" HigherBound="108.1">
+                                <om:Property Name="Expression" Value="MaximumIdleTime_Minutes = MSG_GlobalConfigs.Body.Throttling_MaximumIdleTime_Minutes;&#xD;&#xA;ThrottlingSettingsExpiry_Minutes = MSG_GlobalConfigs.Body.Throttling_SettingsExpiry_Minutes;&#xD;&#xA;WaitDuringOFFRange_Minutes = MSG_GlobalConfigs.Body.Throttling_WaitDuringUndefinedRange_Minutes;&#xD;&#xA;MaximumIdleTime_Drain_Seconds = MSG_GlobalConfigs.Body.Throttling_MaximumIdleTime_Drain_Seconds;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Set Configs" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="d89d7f9a-9eba-4bb2-b18c-a598bd7665b1" ParentLink="ComplexStatement_Statement" LowerBound="108.1" HigherBound="113.1">
+                                <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;MaximumIdleTime_Minutes = {0}&quot;, MaximumIdleTime_Minutes);&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;ThrottlingSettingsExpiry_Minutes = {0}&quot;, ThrottlingSettingsExpiry_Minutes);&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;WaitDuringOFFRange_Minutes = {0}&quot;, WaitDuringOFFRange_Minutes);&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;MaximumIdleTime_Drain_Seconds = {0}&quot;, MaximumIdleTime_Drain_Seconds);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Trace Configs" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="2768cd01-f5cf-4482-b3e3-e172afdca9ac" ParentLink="ComplexStatement_Statement" LowerBound="113.1" HigherBound="115.1">
+                                <om:Property Name="Expression" Value="LastThrottlingSettings_Duration = System.DateTime.Now.Subtract(LastThrottlingSettings_Timestamp);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Set Duration" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="702fd9c6-32a4-4c3a-b784-86c540efc3fd" ParentLink="ComplexStatement_Statement" LowerBound="115.1" HigherBound="141.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_ Refresh Throttle Configs " />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="8f703ce9-4eaf-44bf-a5a8-e31bbed53b89" ParentLink="ReallyComplexStatement_Branch" LowerBound="116.33" HigherBound="136.1">
+                                    <om:Property Name="Expression" Value="LastThrottlingSettings_Duration.Minutes &gt; ThrottlingSettingsExpiry_Minutes &#xD;&#xA;|| MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Expired or Forced" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="VariableAssignment" OID="1d1f8c8d-21f0-492a-ab83-a47fc06b1082" ParentLink="ComplexStatement_Statement" LowerBound="119.1" HigherBound="126.1">
+                                        <om:Property Name="Expression" Value="if (MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag){&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Agency Throttling Rules is being Forced to refresh Now, Control Message Detected&quot;, OrchestrationName);&#xD;&#xA;}&#xD;&#xA;else{&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Agency Throttling Rules Expired, it will refresh Now&quot;, OrchestrationName);&#xD;&#xA;}" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Trace Refresh" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="Call" OID="3bb85653-9bd7-4053-b114-35cb04227c77" ParentLink="ComplexStatement_Statement" LowerBound="126.1" HigherBound="128.1">
+                                        <om:Property Name="Identifier" Value="CallOrchestration_1" />
+                                        <om:Property Name="Invokee" Value="THSample.DFM.Orchestrations.ThrottlingRules" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="CallThrottleRules" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="Parameter" OID="1862e304-4455-44ff-80f1-ed9eca576dd5" ParentLink="InvokeStatement_Parameter">
+                                            <om:Property Name="Direction" Value="Out" />
+                                            <om:Property Name="Name" Value="MSG_ThrottleSettings" />
+                                            <om:Property Name="Type" Value="THSample.DFM.Orchestrations.ThrottleSettingsType" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="Parameter" OID="0acba983-2a94-4357-8c91-12fd07aa6c0f" ParentLink="InvokeStatement_Parameter">
+                                            <om:Property Name="Direction" Value="In" />
+                                            <om:Property Name="Name" Value="MSG_AgencyRequest" />
+                                            <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestType" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="VariableAssignment" OID="23e3b3f6-2a40-4a72-8c5f-6051edd664d7" ParentLink="ComplexStatement_Statement" LowerBound="128.1" HigherBound="130.1">
+                                        <om:Property Name="Expression" Value="Latency_MilliSeconds =  System.Convert.ToInt32(MSG_ThrottleSettings.Body.Latency_Milliseconds);" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Set Latency" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="VariableAssignment" OID="f3850ec1-a027-4768-8f2e-60511cf58a9e" ParentLink="ComplexStatement_Statement" LowerBound="130.1" HigherBound="132.1">
+                                        <om:Property Name="Expression" Value="LastThrottlingSettings_Timestamp = System.DateTime.Now;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="SetNewTimestamp" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="VariableAssignment" OID="e55a5ee1-8f1e-4cbe-b44e-d5f52117aa52" ParentLink="ComplexStatement_Statement" LowerBound="132.1" HigherBound="135.1">
+                                        <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;BRE Throttle Latency_MilliSeconds = {0}&quot;, Latency_MilliSeconds);&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;New LastThrottlingSettings_Timestamp = {0}&quot;, LastThrottlingSettings_Timestamp);" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Trace Variables" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="4585dbf9-df7b-4320-83b7-81ae2996c47c" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="VariableAssignment" OID="1bac734c-e013-485b-9a77-c2c81e7266e6" ParentLink="ComplexStatement_Statement" LowerBound="138.1" HigherBound="140.1">
+                                        <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Agency Throttling Rules still Not Expired or Forced to Refresh&quot;, OrchestrationName);" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Trace Not Expired" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="While" OID="68b8769b-8a5f-441f-8973-4b3356c62e3a" ParentLink="ComplexStatement_Statement" LowerBound="141.1" HigherBound="158.1">
+                                <om:Property Name="Expression" Value="Latency_MilliSeconds == -1" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Loop_Wait during OFF Range" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="c30b6f71-948f-4c6b-b83f-559e33204e3a" ParentLink="ComplexStatement_Statement" LowerBound="144.1" HigherBound="146.1">
+                                    <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Throttling OFF Range detected, WaitDuringOFFRange_Minutes = {1}&quot;, OrchestrationName, WaitDuringOFFRange_Minutes);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Trace OFF range" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Delay" OID="2b79c788-00fe-4607-b1cf-d55c32bf11d3" ParentLink="ComplexStatement_Statement" LowerBound="146.1" HigherBound="148.1">
+                                    <om:Property Name="Timeout" Value="new System.TimeSpan(0,WaitDuringOFFRange_Minutes,0);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="OFF Range_Delay" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="3903fda3-3c3c-480c-b5fa-48bb28c32b4e" ParentLink="ComplexStatement_Statement" LowerBound="148.1" HigherBound="150.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_2" />
+                                    <om:Property Name="Invokee" Value="THSample.DFM.Orchestrations.ThrottlingRules" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="CallThrottleRules" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="45e22b81-bec4-438a-a451-ab121367bab7" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Out" />
+                                        <om:Property Name="Name" Value="MSG_ThrottleSettings" />
+                                        <om:Property Name="Type" Value="THSample.DFM.Orchestrations.ThrottleSettingsType" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="d06b7fab-ae74-49e0-b338-2b48e4595cb5" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="MSG_AgencyRequest" />
+                                        <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestType" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="0f29bbe8-64fd-44b2-86c5-7c3eb3cffb6c" ParentLink="ComplexStatement_Statement" LowerBound="150.1" HigherBound="152.1">
+                                    <om:Property Name="Expression" Value="Latency_MilliSeconds =  System.Convert.ToInt32(MSG_ThrottleSettings.Body.Latency_Milliseconds);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set Latency" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="e37b3df3-7bf8-4818-9618-ff04f2f52f9f" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="154.1">
+                                    <om:Property Name="Expression" Value="LastThrottlingSettings_Timestamp = System.DateTime.Now;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SetNewTimestamp" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="f892e313-23e0-46f4-87a8-de71df068946" ParentLink="ComplexStatement_Statement" LowerBound="154.1" HigherBound="157.1">
+                                    <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;BRE Throttle Latency_MilliSeconds = {0}&quot;, Latency_MilliSeconds);&#xD;&#xA;Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;New LastThrottlingSettings_Timestamp = {0}&quot;, LastThrottlingSettings_Timestamp);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Trace Variables" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="006cfea1-d75b-44d7-8141-36af4ff7dd18" ParentLink="ComplexStatement_Statement" LowerBound="158.1" HigherBound="166.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_ThrottledRequest" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="cc4c79f5-0934-41f0-bee7-eaaba4e1ece6" ParentLink="Construct_MessageRef" LowerBound="159.43" HigherBound="159.63">
+                                    <om:Property Name="Ref" Value="MSG_ThrottledRequest" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="414b8a42-57f1-4420-9389-abe88beb15a7" ParentLink="ComplexStatement_Statement" LowerBound="161.1" HigherBound="165.1">
+                                    <om:Property Name="Expression" Value="MSG_ThrottledRequest = MSG_AgencyRequest;&#xD;&#xA;MSG_ThrottledRequest(*) = MSG_AgencyRequest(*);&#xD;&#xA;MSG_ThrottledRequest(THSample.DFM.InternalSchemas.Throttle) = &quot;0&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="AnalystComments" Value="Reset Throttle Flag in Context" />
+                                    <om:Property Name="Name" Value="Reset Throttle" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Scope" OID="abae248b-b250-497e-80c5-6b0fdc02639f" ParentLink="ComplexStatement_Statement" LowerBound="166.1" HigherBound="194.1">
+                                <om:Property Name="InitializedTransactionType" Value="True" />
+                                <om:Property Name="IsSynchronized" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Scope_Atomic_PromoteThrottleFlag" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="AtomicTransaction" OID="f7111b6c-9bb7-479e-9f7a-261a409295af" ParentLink="Scope_Transaction" LowerBound="168.38" HigherBound="168.71">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transaction_6" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="CorrelationDeclaration" OID="04539261-a431-42f0-9dcb-72acd189a015" ParentLink="Scope_CorrelationDeclaration" LowerBound="170.1" HigherBound="171.1">
+                                    <om:Property Name="Type" Value="THSample.DFM.Orchestrations.ThrottleFlagCorrelationType" />
+                                    <om:Property Name="ParamDirection" Value="In" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ThrottleFlagCorrelation" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="StatementRef" OID="4cec5900-d7a4-409e-be46-75bc158125ae" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="188.109" HigherBound="188.143">
+                                        <om:Property Name="Initializes" Value="True" />
+                                        <om:Property Name="Ref" Value="e085d1cc-237c-4a4a-8e8f-3a9ab76fc816" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="StatementRef_3" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Decision" OID="5b095feb-4e44-47f3-9340-d4dee344ca8e" ParentLink="ComplexStatement_Statement" LowerBound="173.1" HigherBound="192.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Decide_Is Control Message" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="2a0f8d9f-1725-4b71-9421-92d8a315a4e2" ParentLink="ReallyComplexStatement_Branch" LowerBound="174.41" HigherBound="181.1">
+                                        <om:Property Name="Expression" Value="MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Control Message" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="VariableAssignment" OID="bd065050-149d-42d2-8aff-02c0f61b25a0" ParentLink="ComplexStatement_Statement" LowerBound="176.1" HigherBound="178.1">
+                                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Throttle Control Message detected, will update Throttle Configs, NIN = {1}&quot;, OrchestrationName, MSG_AgencyRequest.Body.NIN);" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Trace Control Message" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="VariableAssignment" OID="f396c04d-9df3-4b73-8911-a8248cb32314" ParentLink="ComplexStatement_Statement" LowerBound="178.1" HigherBound="180.1">
+                                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Throttle Control Message detected, Now Discarding this control request&quot;, OrchestrationName);" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Trace Control Message" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="6dccfe81-1dd2-4750-a6ed-3e7d0678bf8f" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="VariableAssignment" OID="f327321d-b56e-4b17-9efc-aa0d8235d7e0" ParentLink="ComplexStatement_Statement" LowerBound="183.1" HigherBound="185.1">
+                                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Throttle Normal Agency Request, NIN = {1}&quot;, OrchestrationName, MSG_AgencyRequest.Body.NIN);" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Trace Request" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="VariableAssignment" OID="8b7e5df6-db8a-4f6c-aed0-859a4d1a1a20" ParentLink="ComplexStatement_Statement" LowerBound="185.1" HigherBound="187.1">
+                                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName+&quot;_Before_SEND&quot;, scopeStarted, callToken);" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="TraceBeforeSend" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Send" OID="e085d1cc-237c-4a4a-8e8f-3a9ab76fc816" ParentLink="ComplexStatement_Statement" LowerBound="187.1" HigherBound="189.1">
+                                            <om:Property Name="PortName" Value="AgencyRequestsPort" />
+                                            <om:Property Name="MessageName" Value="MSG_ThrottledRequest" />
+                                            <om:Property Name="OperationName" Value="FetchAgencyData" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Snd_Request" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="VariableAssignment" OID="399aaafd-3b40-4e2a-97e5-2cd2dcb8edb6" ParentLink="ComplexStatement_Statement" LowerBound="189.1" HigherBound="191.1">
+                                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName+&quot;_After_SEND&quot;, scopeStarted, callToken);" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="TraceAfterSend" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="TransactionAttribute" OID="b9b6418d-f6aa-4337-81e0-365d7692f094" ParentLink="Statement_CLRAttribute" LowerBound="167.1" HigherBound="168.1">
+                                    <om:Property Name="Batch" Value="True" />
+                                    <om:Property Name="Retry" Value="True" />
+                                    <om:Property Name="Timeout" Value="60" />
+                                    <om:Property Name="Isolation" Value="Serializable" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="5bb675b3-b0ca-4643-8ee1-568fbb6dce77" ParentLink="ComplexStatement_Statement" LowerBound="194.1" HigherBound="196.1">
+                                <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName+&quot;_After_ScopeEnd&quot;, scopeStarted, callToken);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TraceAfterSend" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Delay" OID="7652dc7c-758f-4afc-9760-3c29887a55e8" ParentLink="ComplexStatement_Statement" LowerBound="196.1" HigherBound="198.1">
+                                <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,0,0,System.Math.Abs(Latency_MilliSeconds));" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Latency Delay" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="aa2884ed-6227-48df-a816-5df577b1e2a8" ParentLink="ComplexStatement_Statement" LowerBound="198.1" HigherBound="200.1">
+                                <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Orchestration will sleep with Latency = {1} Milliseconds&quot;, OrchestrationName, Latency_MilliSeconds);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TraceDelay" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Listen" OID="26e0aca8-d70d-44a4-a258-3b86e958086c" ParentLink="ComplexStatement_Statement" LowerBound="200.1" HigherBound="216.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Request Listen" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="ListenBranch" OID="ce88e67a-265b-4890-b53e-fa056afef2a7" ParentLink="ReallyComplexStatement_Branch" LowerBound="200.1" HigherBound="200.1">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ListenBranch_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Receive" OID="ed79181a-7930-4a96-bb4e-e41b8bedb387" ParentLink="ListenBranch_Statement" LowerBound="203.1" HigherBound="204.135">
+                                        <om:Property Name="Activate" Value="False" />
+                                        <om:Property Name="PortName" Value="GetAgencyRequestsPort" />
+                                        <om:Property Name="MessageName" Value="MSG_AgencyRequest" />
+                                        <om:Property Name="OperationName" Value="FetchAgencyData" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Rcv_Request" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="ListenBranch" OID="b76f8124-c04e-4fb0-a87e-de0804bed6bd" ParentLink="ReallyComplexStatement_Branch" LowerBound="200.1" HigherBound="200.1">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ListenBranch_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="VariableAssignment" OID="f8d2b717-7dfe-4b0f-bb5f-07fc1d0b50d4" ParentLink="ComplexStatement_Statement" LowerBound="210.1" HigherBound="212.1">
+                                        <om:Property Name="Expression" Value="BreakAggregateLoop = true;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Break Loop" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="VariableAssignment" OID="701ee23d-e7ca-492d-90d8-687bd1e347da" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="214.1">
+                                        <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo(&quot;{0}: Config IDLE Time: {1} Minutes was reached, Terminating Now&quot;, OrchestrationName, MaximumIdleTime_Minutes);" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Trace IDLE Exit" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Delay" OID="777ba5c8-9802-413e-9275-468e9cc580e7" ParentLink="ListenBranch_Statement" LowerBound="207.1" HigherBound="208.93">
+                                        <om:Property Name="Timeout" Value="new System.TimeSpan(0,MaximumIdleTime_Minutes,0)" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Request Delay" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="0b4285fd-6506-40fb-912a-86d412bfa441" ParentLink="ComplexStatement_Statement" LowerBound="216.1" HigherBound="218.1">
+                                <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName, scopeStarted, callToken);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TraceScopeEnd" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="cdcc59d1-244b-4eba-adf9-8f901debe296" ParentLink="Scope_Catch" LowerBound="224.1" HigherBound="305.1">
+                        <om:Property Name="ExceptionName" Value="exGeneric" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchGenericExceptions" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="ec0c92a4-da71-45c7-a1bd-4c9e91466094" ParentLink="Catch_Statement" LowerBound="227.1" HigherBound="229.1">
+                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceError(exGeneric);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="TraceError" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="9108705c-d3bd-4873-850e-2f689be7e80a" ParentLink="Catch_Statement" LowerBound="229.1" HigherBound="231.1">
+                            <om:Property Name="Expression" Value="THSample.DFM.Utilities.Helper.Log(OrchestrationName + &quot; Generic Exception in Main Scope, Draining Requests, and Sending Failed Responses with Exception Details&quot;,THSample.DFM.Utilities.MSGType.Error);&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Trace_EventViewer" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="b8968390-e8ef-4a95-af60-2ecf0619f0f2" ParentLink="Catch_Statement" LowerBound="231.1" HigherBound="240.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_FailedAgencyResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="9de50065-9097-493d-b910-87a73ed0737a" ParentLink="ComplexStatement_Statement" LowerBound="234.1" HigherBound="236.1">
+                                <om:Property Name="ClassName" Value="THSample.DFM.Orchestrations.XForm_AgencyRequest_To_Failed_AgencyResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="XForm_FailedAgencyResponse" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="9f258393-86b1-4b7f-8433-b7e17c2bb2c4" ParentLink="Transform_InputMessagePartRef" LowerBound="235.137" HigherBound="235.159">
+                                    <om:Property Name="MessageRef" Value="MSG_AgencyRequest" />
+                                    <om:Property Name="PartRef" Value="Body" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_3" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="fcfc55fd-9a33-4273-8793-9d95f9303f3f" ParentLink="Transform_OutputMessagePartRef" LowerBound="235.40" HigherBound="235.63">
+                                    <om:Property Name="MessageRef" Value="MSG_AgencyResponse" />
+                                    <om:Property Name="PartRef" Value="Body" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="ed7cc2b1-ab81-406f-be6d-77f74f3d78d7" ParentLink="ComplexStatement_Statement" LowerBound="236.1" HigherBound="239.1">
+                                <om:Property Name="Expression" Value="MSG_AgencyResponse.Body.ResponseHeader.ErrorCode = exGeneric.Source;&#xD;&#xA;MSG_AgencyResponse.Body.ResponseHeader.ErrorDescription = exGeneric.Message;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Set Error" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="5b85a3bd-d521-441f-ad61-b6f33a90c0f8" ParentLink="Construct_MessageRef" LowerBound="232.35" HigherBound="232.53">
+                                <om:Property Name="Ref" Value="MSG_AgencyResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="f842662d-3855-4d2c-aa3f-86e981e43b94" ParentLink="Catch_Statement" LowerBound="240.1" HigherBound="249.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Decide_Is Control Message" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="910fc156-08e8-41cf-b8e4-fbf6533c3276" ParentLink="ReallyComplexStatement_Branch" LowerBound="241.25" HigherBound="244.1">
+                                <om:Property Name="Expression" Value="MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Control Message" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="3f649a4f-d16a-403b-9f44-43cfa7100a98" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Send" OID="23058abb-dd4e-409b-8088-9f50086b82dd" ParentLink="ComplexStatement_Statement" LowerBound="246.1" HigherBound="248.1">
+                                    <om:Property Name="PortName" Value="AgencyResponsesPort" />
+                                    <om:Property Name="MessageName" Value="MSG_AgencyResponse" />
+                                    <om:Property Name="OperationName" Value="UpsertAgencyData" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Snd_Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="e0121ca2-802f-4334-8a27-2891680a6037" ParentLink="Catch_Statement" LowerBound="249.1" HigherBound="251.1">
+                            <om:Property Name="Expression" Value="BreakAggregateLoop = false;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Reset Loop Flag" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="While" OID="ecb2d8f0-f911-40aa-9525-1a7331d70190" ParentLink="Catch_Statement" LowerBound="251.1" HigherBound="300.1">
+                            <om:Property Name="Expression" Value="BreakAggregateLoop == false" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Loop_Drain Aggregate Requests" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Scope" OID="8f26ebfe-5280-45ee-a3f9-d83e258c63bc" ParentLink="ComplexStatement_Statement" LowerBound="254.1" HigherBound="281.1">
+                                <om:Property Name="InitializedTransactionType" Value="True" />
+                                <om:Property Name="IsSynchronized" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Scope_Drain_ThrottleAgencyRequests" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="LongRunningTransaction" OID="62d5501b-c7ab-4ad7-957f-11a2bb1121a3" ParentLink="Scope_Transaction" LowerBound="255.34" HigherBound="255.72">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transaction_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="CorrelationDeclaration" OID="dd15b7bb-3c59-426f-8d3b-3cb454d75404" ParentLink="Scope_CorrelationDeclaration" LowerBound="257.1" HigherBound="258.1">
+                                    <om:Property Name="Type" Value="THSample.DFM.Orchestrations.ThrottleFlagCorrelationType" />
+                                    <om:Property Name="ParamDirection" Value="In" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ThrottleFlagCorrelation" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="73ca4347-8bd1-410b-a179-89b96318a9d4" ParentLink="ComplexStatement_Statement" LowerBound="260.1" HigherBound="263.1">
+                                    <om:Property Name="Expression" Value="scopeName = &quot;Scope_Drain_ThrottleAgencyRequests&quot;;&#xD;&#xA;scopeStarted = Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceStartScope(scopeName, callToken);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="TraceScopeStart" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Listen" OID="d9d9163f-f54d-4efd-a15f-adf9a6cbb98e" ParentLink="ComplexStatement_Statement" LowerBound="263.1" HigherBound="277.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Request Listen" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="ListenBranch" OID="d59ddcbe-2f99-45ec-9516-e01648544864" ParentLink="ReallyComplexStatement_Branch" LowerBound="263.1" HigherBound="263.1">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ListenBranch_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="Receive" OID="18695ad0-b175-4868-9826-35b1ecaa3c83" ParentLink="ListenBranch_Statement" LowerBound="266.1" HigherBound="267.139">
+                                            <om:Property Name="Activate" Value="False" />
+                                            <om:Property Name="PortName" Value="GetAgencyRequestsPort" />
+                                            <om:Property Name="MessageName" Value="MSG_AgencyRequest" />
+                                            <om:Property Name="OperationName" Value="FetchAgencyData" />
+                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Rcv_Request" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="ListenBranch" OID="004e3425-224d-43d7-91bd-12343ffabdc1" ParentLink="ReallyComplexStatement_Branch" LowerBound="263.1" HigherBound="263.1">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ListenBranch_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="Delay" OID="72125f0c-726c-47e0-880a-e80ff4f1e77f" ParentLink="ListenBranch_Statement" LowerBound="270.1" HigherBound="271.103">
+                                            <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,MaximumIdleTime_Drain_Seconds)" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Request Delay" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="VariableAssignment" OID="f292104c-35f6-4aa3-ba3f-9e68016d695e" ParentLink="ComplexStatement_Statement" LowerBound="273.1" HigherBound="275.1">
+                                            <om:Property Name="Expression" Value="BreakAggregateLoop = true;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Break Loop" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="5c681773-b469-4fe3-9867-907ca5253376" ParentLink="ComplexStatement_Statement" LowerBound="277.1" HigherBound="279.1">
+                                    <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName, scopeStarted, callToken);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="TraceScopeEnd" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="58707654-2e4b-4c42-8fce-bbcc38b7db27" ParentLink="ComplexStatement_Statement" LowerBound="281.1" HigherBound="290.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_FailedAgencyResponse" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="69b7b5c7-b7cf-4094-a993-18e29cdff8eb" ParentLink="ComplexStatement_Statement" LowerBound="284.1" HigherBound="286.1">
+                                    <om:Property Name="ClassName" Value="THSample.DFM.Orchestrations.XForm_AgencyRequest_To_Failed_AgencyResponse" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="XForm_FailedAgencyResponse" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="f760b5b3-ae79-446e-87a4-2c3402e25788" ParentLink="Transform_OutputMessagePartRef" LowerBound="285.44" HigherBound="285.67">
+                                        <om:Property Name="MessageRef" Value="MSG_AgencyResponse" />
+                                        <om:Property Name="PartRef" Value="Body" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_4" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="a3590539-b9ef-4c30-bb6b-2678fba5ab89" ParentLink="Transform_InputMessagePartRef" LowerBound="285.141" HigherBound="285.163">
+                                        <om:Property Name="MessageRef" Value="MSG_AgencyRequest" />
+                                        <om:Property Name="PartRef" Value="Body" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_3" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="c66262f9-330c-4860-b05c-5d7facf58c21" ParentLink="ComplexStatement_Statement" LowerBound="286.1" HigherBound="289.1">
+                                    <om:Property Name="Expression" Value="MSG_AgencyResponse.Body.ResponseHeader.ErrorCode = exGeneric.Source;&#xD;&#xA;MSG_AgencyResponse.Body.ResponseHeader.ErrorDescription = exGeneric.Message;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Set Error" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="35ff8543-f546-4508-bf69-06cb151f5143" ParentLink="Construct_MessageRef" LowerBound="282.39" HigherBound="282.57">
+                                    <om:Property Name="Ref" Value="MSG_AgencyResponse" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Decision" OID="427f017b-cf82-4390-aac4-e9a7e7857dc6" ParentLink="ComplexStatement_Statement" LowerBound="290.1" HigherBound="299.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_Is Control Message" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="5aa8d785-629a-40c0-a564-1ae350f30b5c" ParentLink="ReallyComplexStatement_Branch" LowerBound="291.29" HigherBound="294.1">
+                                    <om:Property Name="Expression" Value="MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Control Message" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="a2498ba1-7148-44d3-8d19-101e49ac4383" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Send" OID="8a6b0842-55bb-4442-9484-e98239a897a2" ParentLink="ComplexStatement_Statement" LowerBound="296.1" HigherBound="298.1">
+                                        <om:Property Name="PortName" Value="AgencyResponsesPort" />
+                                        <om:Property Name="MessageName" Value="MSG_AgencyResponse" />
+                                        <om:Property Name="OperationName" Value="UpsertAgencyData" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Snd_Response" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="2901f675-28f4-47fa-9722-7b717fc9ebbd" ParentLink="Catch_Statement" LowerBound="300.1" HigherBound="302.1">
+                            <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceOut(callToken);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="TraceOut" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="7609351f-e258-4479-a690-38a92accf498" ParentLink="Catch_Statement" LowerBound="302.1" HigherBound="304.1">
+                            <om:Property Name="ErrorMessage" Value="OrchestrationName + &quot; Generic Exception, Sending Failed Response with Exception Details&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="042b4313-799f-43dc-bbc7-e73a2a894f80" ParentLink="ServiceBody_Statement" LowerBound="307.1" HigherBound="309.1">
+                    <om:Property Name="Expression" Value="Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceOut(callToken);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="TraceOut" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="27f06a44-f888-4e94-96d5-70aae6340421" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="7.1" HigherBound="10.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="True" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestsPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetAgencyRequestsPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="df0b5266-8c05-4471-8804-1845048cf961" ParentLink="PortDeclaration_CLRAttribute" LowerBound="7.1" HigherBound="8.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5fc21e87-6623-44ba-a6f0-13b2a701f536" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="10.1" HigherBound="12.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="315" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyResponsesPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AgencyResponsesPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="5266add1-2a0b-4d21-9643-a53c679829c2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="10.1" HigherBound="11.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e9e921d6-1f62-42ea-af4d-b1d6dd8e2c90" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="12.1" HigherBound="14.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="197" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="THSample.DFM.Orchestrations.AgencyRequestsPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AgencyRequestsPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="b8a12854-2c19-47ce-9d15-62bde922c03a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="12.1" HigherBound="13.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module THSample.DFM.Orchestrations
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ThrottleAgencyRequests
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        [Microsoft.XLANGs.BaseTypes.OrderedDelivery()]
+        port implements AgencyRequestsPortType GetAgencyRequestsPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses AgencyResponsesPortType AgencyResponsesPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses AgencyRequestsPortType AgencyRequestsPort;
+        correlation AgencyRequestCorrelationType AgencyRequestCorrelation;
+        message AgencyResponseType MSG_AgencyResponse;
+        message GlobalConfigsType MSG_GlobalConfigs;
+        message AgencyRequestType MSG_ThrottledRequest;
+        message AgencyRequestType MSG_AgencyRequest;
+        message ThrottleSettingsType MSG_ThrottleSettings;
+        System.Int32 ThrottlingSettingsExpiry_Minutes;
+        System.Boolean BreakAggregateLoop;
+        System.Int32 MaximumIdleTime_Minutes;
+        System.Int32 Latency_MilliSeconds;
+        System.String strfaultmessage;
+        System.Int64 scopeStarted;
+        System.String scopeName;
+        System.Xml.XmlDocument debugMessage;
+        System.Guid callToken;
+        System.DateTime LastThrottlingSettings_Timestamp;
+        System.TimeSpan LastThrottlingSettings_Duration;
+        System.Int32 WaitDuringOFFRange_Minutes;
+        System.String OrchestrationName;
+        System.Int32 MaximumIdleTime_Drain_Seconds;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bfe89cf3-8bb9-48cf-b871-1fa87d056305")]
+            activate ((BTS.Operation == "FetchAgencyData") && (THSample.DFM.InternalSchemas.Throttle == "1"))receive (GetAgencyRequestsPort.FetchAgencyData, MSG_AgencyRequest, initialize AgencyRequestCorrelation);
+            BreakAggregateLoop = false;
+            strfaultmessage = "";
+            scopeName = "";
+            debugMessage = new System.Xml.XmlDocument();
+            OrchestrationName = "";
+            MaximumIdleTime_Drain_Seconds = 1;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ee6c512-2d06-41db-a543-90967e066d2a")]
+            callToken = Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceIn();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("adf30b38-f460-4937-8874-a61b960fe9c1")]
+            OrchestrationName = "ThrottlingOrchestration_Agency (" +MSG_AgencyRequest(THSample.DFM.InternalSchemas.AID)+")";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7f6c7da7-7b9b-4624-b04a-1f955b1e7447")]
+            scope longrunning transaction Transaction_2
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3f5955ac-c9ca-480a-ad7c-b6793c5272e0")]
+                    construct MSG_GlobalConfigs
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6b897ee8-e27c-4201-a106-4a53e9dcb554")]
+                        transform (MSG_GlobalConfigs.Body) = THSample.DFM.Orchestrations.XForm_Dummy_To_GlobalConfigs (MSG_AgencyRequest.Body);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ffe15fdc-cba7-4fca-bb68-50f47cd83e0a")]
+                    call THSample.DFM.Orchestrations.ThrottlingRules (out MSG_ThrottleSettings, MSG_AgencyRequest) CallThrottleRules;
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0b1304f8-c22d-4117-92c9-bdf6a305b00d")]
+                    Latency_MilliSeconds =  System.Convert.ToInt32(MSG_ThrottleSettings.Body.Latency_Milliseconds);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e14ecc6d-93d8-4ba6-abaf-acd297952fb4")]
+                    LastThrottlingSettings_Timestamp = System.DateTime.Now;
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c96bf54f-5268-4619-8e1f-04ddc8c2d37e")]
+                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("BRE Throttle Latency_MilliSeconds = {0}", Latency_MilliSeconds);
+                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("New LastThrottlingSettings_Timestamp = {0}", LastThrottlingSettings_Timestamp);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fc1a3e00-02ac-40a5-8416-5650d8435c79")]
+                    scope longrunning transaction Transaction_3
+                    {
+                        body
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c05644df-8065-427f-9164-eaf3dd8a5513")]
+                            while (BreakAggregateLoop == false)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("828afd01-e430-4fbd-abb4-1f5eaecb8796")]
+                                scopeName = "Scope_ThrottleAgencyRequests";
+                                scopeStarted = Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceStartScope(scopeName, callToken);
+
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("56e015db-7018-4092-999f-615cf99e8fab")]
+                                scope
+                                {
+                                    Microsoft.RuleEngine.Policy  policy_3__;
+                                    System.Xml.XmlDocument policyParam_3_5__;
+                                    Microsoft.RuleEngine.TypedXmlDocument policyParamAsTXD_3_5__;
+
+                                    body
+                                    {
+                                                                                policyParam_3_5__ = MSG_GlobalConfigs.Body;
+                                        policyParamAsTXD_3_5__ = new Microsoft.RuleEngine.TypedXmlDocument("THSample.DFM.InternalSchemas.GlobalConfigs", policyParam_3_5__);
+
+                                        policy_3__ = new Microsoft.RuleEngine.Policy("THSampleDFMConfigs");
+                                        policy_3__.Execute(
+                                            policyParamAsTXD_3_5__);
+                                        construct MSG_GlobalConfigs
+                                        {
+                                            MSG_GlobalConfigs.Body = policyParamAsTXD_3_5__.Document;
+                                        }
+
+                                        policy_3__.Dispose();
+                                    }
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2eb17691-2d31-4c14-9b5f-3d9883a8c4ea")]
+                                MaximumIdleTime_Minutes = MSG_GlobalConfigs.Body.Throttling_MaximumIdleTime_Minutes;
+                                ThrottlingSettingsExpiry_Minutes = MSG_GlobalConfigs.Body.Throttling_SettingsExpiry_Minutes;
+                                WaitDuringOFFRange_Minutes = MSG_GlobalConfigs.Body.Throttling_WaitDuringUndefinedRange_Minutes;
+                                MaximumIdleTime_Drain_Seconds = MSG_GlobalConfigs.Body.Throttling_MaximumIdleTime_Drain_Seconds;
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d89d7f9a-9eba-4bb2-b18c-a598bd7665b1")]
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("MaximumIdleTime_Minutes = {0}", MaximumIdleTime_Minutes);
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("ThrottlingSettingsExpiry_Minutes = {0}", ThrottlingSettingsExpiry_Minutes);
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("WaitDuringOFFRange_Minutes = {0}", WaitDuringOFFRange_Minutes);
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("MaximumIdleTime_Drain_Seconds = {0}", MaximumIdleTime_Drain_Seconds);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2768cd01-f5cf-4482-b3e3-e172afdca9ac")]
+                                LastThrottlingSettings_Duration = System.DateTime.Now.Subtract(LastThrottlingSettings_Timestamp);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("702fd9c6-32a4-4c3a-b784-86c540efc3fd")]
+                                if (LastThrottlingSettings_Duration.Minutes > ThrottlingSettingsExpiry_Minutes 
+                                    || MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1d1f8c8d-21f0-492a-ab83-a47fc06b1082")]
+                                    if (MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag){
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Agency Throttling Rules is being Forced to refresh Now, Control Message Detected", OrchestrationName);
+                                    }
+                                    else{
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Agency Throttling Rules Expired, it will refresh Now", OrchestrationName);
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3bb85653-9bd7-4053-b114-35cb04227c77")]
+                                    call THSample.DFM.Orchestrations.ThrottlingRules (out MSG_ThrottleSettings, MSG_AgencyRequest) CallOrchestration_1;
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("23e3b3f6-2a40-4a72-8c5f-6051edd664d7")]
+                                    Latency_MilliSeconds =  System.Convert.ToInt32(MSG_ThrottleSettings.Body.Latency_Milliseconds);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f3850ec1-a027-4768-8f2e-60511cf58a9e")]
+                                    LastThrottlingSettings_Timestamp = System.DateTime.Now;
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e55a5ee1-8f1e-4cbe-b44e-d5f52117aa52")]
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("BRE Throttle Latency_MilliSeconds = {0}", Latency_MilliSeconds);
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("New LastThrottlingSettings_Timestamp = {0}", LastThrottlingSettings_Timestamp);
+                                }
+                                else 
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1bac734c-e013-485b-9a77-c2c81e7266e6")]
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Agency Throttling Rules still Not Expired or Forced to Refresh", OrchestrationName);
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("68b8769b-8a5f-441f-8973-4b3356c62e3a")]
+                                while (Latency_MilliSeconds == -1)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c30b6f71-948f-4c6b-b83f-559e33204e3a")]
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Throttling OFF Range detected, WaitDuringOFFRange_Minutes = {1}", OrchestrationName, WaitDuringOFFRange_Minutes);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b79c788-00fe-4607-b1cf-d55c32bf11d3")]
+                                    delay new System.TimeSpan(0,WaitDuringOFFRange_Minutes,0);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3903fda3-3c3c-480c-b5fa-48bb28c32b4e")]
+                                    call THSample.DFM.Orchestrations.ThrottlingRules (out MSG_ThrottleSettings, MSG_AgencyRequest) CallOrchestration_2;
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0f29bbe8-64fd-44b2-86c5-7c3eb3cffb6c")]
+                                    Latency_MilliSeconds =  System.Convert.ToInt32(MSG_ThrottleSettings.Body.Latency_Milliseconds);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e37b3df3-7bf8-4818-9618-ff04f2f52f9f")]
+                                    LastThrottlingSettings_Timestamp = System.DateTime.Now;
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f892e313-23e0-46f4-87a8-de71df068946")]
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("BRE Throttle Latency_MilliSeconds = {0}", Latency_MilliSeconds);
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("New LastThrottlingSettings_Timestamp = {0}", LastThrottlingSettings_Timestamp);
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("006cfea1-d75b-44d7-8141-36af4ff7dd18")]
+                                construct MSG_ThrottledRequest
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("414b8a42-57f1-4420-9389-abe88beb15a7")]
+                                    MSG_ThrottledRequest = MSG_AgencyRequest;
+                                    MSG_ThrottledRequest(*) = MSG_AgencyRequest(*);
+                                    MSG_ThrottledRequest(THSample.DFM.InternalSchemas.Throttle) = "0";
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("abae248b-b250-497e-80c5-6b0fdc02639f")]
+                                [Microsoft.XLANGs.BaseTypes.Transaction(Retry=true,Batch=true,Timeout=60,TranIsolationLevel=System.Data.IsolationLevel.Serializable)]
+                                scope atomic transaction Transaction_6
+                                {
+                                    correlation ThrottleFlagCorrelationType ThrottleFlagCorrelation;
+                                    body
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5b095feb-4e44-47f3-9340-d4dee344ca8e")]
+                                        if (MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag)
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd065050-149d-42d2-8aff-02c0f61b25a0")]
+                                            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Throttle Control Message detected, will update Throttle Configs, NIN = {1}", OrchestrationName, MSG_AgencyRequest.Body.NIN);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f396c04d-9df3-4b73-8911-a8248cb32314")]
+                                            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Throttle Control Message detected, Now Discarding this control request", OrchestrationName);
+                                        }
+                                        else 
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f327321d-b56e-4b17-9efc-aa0d8235d7e0")]
+                                            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Throttle Normal Agency Request, NIN = {1}", OrchestrationName, MSG_AgencyRequest.Body.NIN);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b7e5df6-db8a-4f6c-aed0-859a4d1a1a20")]
+                                            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName+"_Before_SEND", scopeStarted, callToken);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e085d1cc-237c-4a4a-8e8f-3a9ab76fc816")]
+                                            send (AgencyRequestsPort.FetchAgencyData, MSG_ThrottledRequest, initialize ThrottleFlagCorrelation);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("399aaafd-3b40-4e2a-97e5-2cd2dcb8edb6")]
+                                            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName+"_After_SEND", scopeStarted, callToken);
+                                        }
+                                    }
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5bb675b3-b0ca-4643-8ee1-568fbb6dce77")]
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName+"_After_ScopeEnd", scopeStarted, callToken);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7652dc7c-758f-4afc-9760-3c29887a55e8")]
+                                delay new System.TimeSpan(0,0,0,0,System.Math.Abs(Latency_MilliSeconds));
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa2884ed-6227-48df-a816-5df577b1e2a8")]
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Orchestration will sleep with Latency = {1} Milliseconds", OrchestrationName, Latency_MilliSeconds);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("26e0aca8-d70d-44a4-a258-3b86e958086c")]
+                                listen
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed79181a-7930-4a96-bb4e-e41b8bedb387")]
+                                    until receive (GetAgencyRequestsPort.FetchAgencyData, MSG_AgencyRequest, AgencyRequestCorrelation)
+                                    {
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("777ba5c8-9802-413e-9275-468e9cc580e7")]
+                                    timeout new System.TimeSpan(0,MaximumIdleTime_Minutes,0)
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f8d2b717-7dfe-4b0f-bb5f-07fc1d0b50d4")]
+                                        BreakAggregateLoop = true;
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("701ee23d-e7ca-492d-90d8-687bd1e347da")]
+                                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceInfo("{0}: Config IDLE Time: {1} Minutes was reached, Terminating Now", OrchestrationName, MaximumIdleTime_Minutes);
+                                    }
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0b4285fd-6506-40fb-912a-86d412bfa441")]
+                                Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName, scopeStarted, callToken);
+                            }
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("cdcc59d1-244b-4eba-adf9-8f901debe296")]
+                    catch (System.Exception exGeneric)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ec0c92a4-da71-45c7-a1bd-4c9e91466094")]
+                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceError(exGeneric);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9108705c-d3bd-4873-850e-2f689be7e80a")]
+                        THSample.DFM.Utilities.Helper.Log(OrchestrationName + " Generic Exception in Main Scope, Draining Requests, and Sending Failed Responses with Exception Details",THSample.DFM.Utilities.MSGType.Error);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b8968390-e8ef-4a95-af60-2ecf0619f0f2")]
+                        construct MSG_AgencyResponse
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9de50065-9097-493d-b910-87a73ed0737a")]
+                            transform (MSG_AgencyResponse.Body) = THSample.DFM.Orchestrations.XForm_AgencyRequest_To_Failed_AgencyResponse (MSG_AgencyRequest.Body);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed7cc2b1-ab81-406f-be6d-77f74f3d78d7")]
+                            MSG_AgencyResponse.Body.ResponseHeader.ErrorCode = exGeneric.Source;
+                            MSG_AgencyResponse.Body.ResponseHeader.ErrorDescription = exGeneric.Message;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f842662d-3855-4d2c-aa3f-86e981e43b94")]
+                        if (MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag)
+                        {
+                        }
+                        else 
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("23058abb-dd4e-409b-8088-9f50086b82dd")]
+                            send (AgencyResponsesPort.UpsertAgencyData, MSG_AgencyResponse);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e0121ca2-802f-4334-8a27-2891680a6037")]
+                        BreakAggregateLoop = false;
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ecb2d8f0-f911-40aa-9525-1a7331d70190")]
+                        while (BreakAggregateLoop == false)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8f26ebfe-5280-45ee-a3f9-d83e258c63bc")]
+                            scope longrunning transaction Transaction_4
+                            {
+                                correlation ThrottleFlagCorrelationType ThrottleFlagCorrelation;
+                                body
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("73ca4347-8bd1-410b-a179-89b96318a9d4")]
+                                    scopeName = "Scope_Drain_ThrottleAgencyRequests";
+                                    scopeStarted = Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceStartScope(scopeName, callToken);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9d9163f-f54d-4efd-a15f-adf9a6cbb98e")]
+                                    listen
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("18695ad0-b175-4868-9826-35b1ecaa3c83")]
+                                        until receive (GetAgencyRequestsPort.FetchAgencyData, MSG_AgencyRequest, AgencyRequestCorrelation)
+                                        {
+                                        }
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("72125f0c-726c-47e0-880a-e80ff4f1e77f")]
+                                        timeout new System.TimeSpan(0,0,MaximumIdleTime_Drain_Seconds)
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f292104c-35f6-4aa3-ba3f-9e68016d695e")]
+                                            BreakAggregateLoop = true;
+                                        }
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5c681773-b469-4fe3-9867-907ca5253376")]
+                                    Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceEndScope(scopeName, scopeStarted, callToken);
+                                }
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("58707654-2e4b-4c42-8fce-bbcc38b7db27")]
+                            construct MSG_AgencyResponse
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("69b7b5c7-b7cf-4094-a993-18e29cdff8eb")]
+                                transform (MSG_AgencyResponse.Body) = THSample.DFM.Orchestrations.XForm_AgencyRequest_To_Failed_AgencyResponse (MSG_AgencyRequest.Body);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c66262f9-330c-4860-b05c-5d7facf58c21")]
+                                MSG_AgencyResponse.Body.ResponseHeader.ErrorCode = exGeneric.Source;
+                                MSG_AgencyResponse.Body.ResponseHeader.ErrorDescription = exGeneric.Message;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("427f017b-cf82-4390-aac4-e9a7e7857dc6")]
+                            if (MSG_AgencyRequest.Body.NIN == THSample.DFM.Utilities.Strings.ThrottlingSettingsFlag)
+                            {
+                            }
+                            else 
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("8a6b0842-55bb-4442-9484-e98239a897a2")]
+                                send (AgencyResponsesPort.UpsertAgencyData, MSG_AgencyResponse);
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2901f675-28f4-47fa-9722-7b717fc9ebbd")]
+                        Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceOut(callToken);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7609351f-e258-4479-a690-38a92accf498")]
+                        terminate OrchestrationName + " Generic Exception, Sending Failed Response with Exception Details";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("042b4313-799f-43dc-bbc7-e73a2a894f80")]
+            Microsoft.BizTalk.CAT.BestPractices.Framework.Instrumentation.TraceManager.WorkflowComponent.TraceOut(callToken);
+        }
+    }
+}
+
